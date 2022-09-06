@@ -71,7 +71,15 @@ public static void main(String[] args) {
 	Account a2=new Account(9008758585l,3000,smith);
 	a1.withDraw(2000);
 	a2.withDraw(2000);
-	System.out.println(a1);
-	System.out.println(a2);
+	if(a1.getBalance()>=500) {
+		System.out.println(a1);
+	}else {
+		System.out.println("Less than min balance");
+	}
+	if(a2.getBalance()>=500) {
+		System.out.println(a2);
+	}else {
+		System.out.println("Less than min balance");
+	}
 }
 }
